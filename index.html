@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="product-management">
+        <div class="container">
+            <div class="product-title">
+                <h2>Phone System</h2>
+                <p>product management system</p>
+            </div>
+            <div class="problems">
+                <span>Error: Type the title </span>
+                <span>Error: type the price </span>
+                <span>Error: count must be less than 500 </span>
+                <span>Error: type the category </span>
+            </div>
+            <div class="product-content">
+                <input placeholder="Title" type="text" id="title">
+                <div class="totalPrice">
+                    <input  type="number" placeholder="Price" id="price">
+                    <input  type="number" id="taxes" placeholder="Taxes">
+                    <input type="number" id="ads" placeholder="ADS">
+                    <input type="number" id="discount" placeholder="Discount">
+                    <p class="finalprice">Total: <span id="total"></span></p>
+                </div>
+                <input type="number" placeholder="Count" id="count">
+                <input type="text" placeholder="Category" id="category">
+                <input type="submit" value="create" id="create">
+                <input type="text" placeholder="Search" id="search">
+                <div class="searchButtons">
+                    <button id="searchTitle">Search By Title</button>
+                    <button id="searchCategory">Search By Category</button>
+                </div>
+            </div>
+            <div class="responsive-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>TITLE</td>
+                            <td>PRICE</td>
+                            <td>TAXES</td>
+                            <td>ADS</td>
+                            <td>DISCOUNT</td>
+                            <td>TOTAL</td>
+                            <td>CATEGORY</td>
+                            <td>UPDATE</td>
+                            <td>DELETE</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+            </table>            
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
