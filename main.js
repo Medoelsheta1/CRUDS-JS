@@ -74,7 +74,10 @@ function createProduct () {
             document.querySelector(".problems span:first-child").classList.add("active")
         }else if (price.value == '') {
             document.querySelector(".problems span:nth-child(2)").classList.add("active")
-        }else if (count.value > 500 || count.value < 1) {
+        }else if (count.value == ''){
+            document.querySelector(".problems span:nth-child(5)").classList.add("active")
+        }
+        else if (count.value > 500 || count.value < 1) {
             document.querySelector(".problems span:nth-child(3)").classList.add("active")
         }else if (category.value == '') {
             document.querySelector(".problems span:nth-child(4)").classList.add("active")
